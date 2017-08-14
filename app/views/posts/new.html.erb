@@ -1,0 +1,16 @@
+<h1>&nbsp;Add Movie</h1>
+<%= form_for :post, url: posts_path do |f| %>
+	<P>
+		&nbsp;&nbsp;<%= f.label :title %><br>
+		&nbsp;&nbsp;<%= f.text_field :title %>
+	</P>
+
+	<P>	
+		&nbsp;&nbsp;<%= f.label :body %><br>
+		&nbsp;&nbsp;<%= f.text_area :body %>
+	</P>
+
+	<P>
+		&nbsp;&nbsp;<%= f.submit %>
+	</P>
+<% end %>
